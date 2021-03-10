@@ -1,0 +1,33 @@
+<head>
+<title>Menú vertical responsive</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<title>Menu</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="./assets/img/660376.png" alt=""></label>
+        <nav class="menu">
+        <ul>
+        <li><a href="">Registro</a></li>
+        <li><a href="">Informes</a></li>
+        <li><a href="">Pagos</a></li>
+        <li><a href="">Galeria</a></li>
+        <li><a href="">Contactos</a></li>
+        </ul>
+
+        </nav>
+
+    </header>
+ <script>
+          const btn = document.querySelector('#menu-btn');
+          const menu = document.querySelector('#sidemenu');
+          btn.addEventListener('click', e =>{
+                menu.classList.toggle("menu-expanded");
+                menu.classList.toggle("menu-collapsed");
+                document.querySelector('body').classList.toggle('body-expended');
+          });
+ </script>
+
+ </body>
