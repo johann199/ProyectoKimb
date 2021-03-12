@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "kimbara-a52d1": {
+      "hosting": {
+        "kimbara": [
+          "kimbara-a52d1"
+        ]
+      }
+    }
+  }
+}

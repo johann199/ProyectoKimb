@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "kimbara",
+      "public": "dist/kimbara",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

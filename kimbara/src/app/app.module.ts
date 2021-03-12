@@ -6,6 +6,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import{SidenavComponent} from './sidenav/sidenav.component';
+//import{AngularFireModule} from 'angularfire2';
+//import{environment} from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import{SidenavComponent} from './sidenav/sidenav.component';
     BrowserModule,
     AppRoutingModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    //AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
   bootstrap: [AppComponent]
