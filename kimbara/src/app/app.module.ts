@@ -6,22 +6,36 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import{SidenavComponent} from './sidenav/sidenav.component';
-//import{AngularFireModule} from 'angularfire2';
-//import{environment} from '../environments/environment';
+//firebase
+import{AngularFireModule} from 'angularfire2';
+//import{AngularFireDatabaseModule}from'angularfire2';
+import{environment} from '../environments/environment';
+//Compones
+import { BailarinesComponent } from './components/bailarines/bailarines.component';
+import { BailarinesListComponent } from './components/bailarines/bailarines-list/bailarines-list.component';
+import { BailarinComponent } from './component/bailarines/bailarin/bailarin.component';
+//servicios 
+import {BailarinService}from './services/bailarin.service';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    BailarinesComponent,
+    BailarinesListComponent,
+    BailarinComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatMenuModule,
     MatSidenavModule,
-    //AngularFireModule.initializeApp(environment.firebase),
+    //AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
-  providers: [],
+  providers: [
+    BailarinService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
